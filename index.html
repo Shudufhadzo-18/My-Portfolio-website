@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatable" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+        
+        <title>personal portfolio website</title>
+
+    </head>
+    <body>
+        <header class="header" id="header">
+            <h3>SB</h3>
+            
+             
+              <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav class="navbar"  id="navbar">
+                
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+        </header>
+        <!-- HOME PAGE CODE -->
+        
+        <section class="home" id="home" >
+            <!-- Toggle code -->
+               <div class="Toggle">
+           <a href="#">
+            <i class='bx  bx-sun-bright' id="toggleLight" ></i> 
+            </a>
+           </div>
+           <!-- end of toggle code -->
+            
+           
+            
+            <div class="img-back">
+                <img src="files/home.jpg" alt="background picture"/>
+
+            </div>
+            
+            
+
+            </nav>
+            <div class="home-content">
+                <h1>Hi, I'm Shudufhadzo Tshimuka</h1>
+                <h3><span>Aspiring software Developer</span></h3>
+                <p>passionate about backend development, web technologies, and creating efficient, scalable
+                   applications.</p>
+                <div class="btn-box">
+                    <a href="files/Shudufhadzo_Tshimuka_Resume_2025.pdf" download ="Shudufhadzo_Tshimuka_Resume.pdf">Download My resume</a>
+                    <a href="#Projects">View My Work</a>
+                </div>
+            
+            <div class="home-icon">
+                <a href="https://www.linkedin.com/in/shudufhadzo-tshimuka-287891233" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:shudufhadzo118@gmail.com"><i class='bx bxs-envelope' ></i></a>
+                <a href="#Contact"><i class='bx bxs-contact' ></i></a>
+                <a href="https://github.com/Shudufhadzo-18" target="_blank"><i class='bxl  bx-github'  ></i> </a> 
+            
+            </div>
+            <!--Chatbot -->
+            <button id="chatbot-toggler">
+        <span class="material-symbols-rounded"><i class='bx bxs-comment'></i></span>
+        <span class="material-symbols-rounded"><i class='bx bx-x'></i></span>
+    </button>
+    <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+              <i class='bx bx-bot'></i>  
+              <h2 class="logo-text">Shudu's assistant</h2>
+            </div>
+            <button id="close-chatbot" class="material-symbol-rounded"><i class='bx bx-chevron-down' ></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="message bot-message">
+                <i class='bx bx-bot'></i>
+                <div class="message-text">Hi! I'm Shudufhadzo's portfolio assistant. How can I help you learn more about his work and experience?</div>
+            </div>
+            <div class="quick-prompts">
+                <button class="prompt-btn" data-answer="I am a final-year IT student at the Central University of Technology with a strong foundation in software development and a passion for building impactful digital solutions. My technical skill set includes proficiency in C#, JavaScript, Flutter, Dart, HTML, CSS, SQL, and Microsoft technologies.">
+    About Shudufhadzo?
+  </button>
+                <button class="prompt-btn">Want to know about Shudu's skills?</button>
+                <button class="prompt-btn">Show Shudu's projects?</button>
+                <button class="prompt-btn">What experience does Shudu have?</button>
+</div>
+        </div>
+        
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+            <textarea placeholder="message...." class="message-input" required></textarea> 
+            <div class="chat-controls">
+                <button type="button" id="send-message" class="material-symbol-rounded" ><i class='bx bx-up-arrow-alt'></i>
+                </button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module"  src="script.js" > </script>
+
+            </div>
+
+           <span class="home-imgHover"></span>
+           
+            </section> 
+           <!-- ABOUT ME SECTION CODE -->
+            <section class="about-page" id="about">
+                <h2 class="heading"> About <span> Me</span></h2>
+                <div class="about-img">
+                    <img src="files/home.jpg" alt="">
+                    <span class="circle-spin"></span>
+                </div>
+                <div class="about-content">
+                    <h3>Aspiring software Developer</h3>
+                        <p> I have recently completed a qualification in a Diploma in Information Technology in Software
+                            Development, NQF 6, from Central University of Technology. I have a solid foundation in
+                            software engineering principles and a passion for building impactful digital solutions.
+                           My technical skill set includes proficiency in <strong>C#</strong>, <strong>JavaScript</strong>, <strong>Dart</strong>,<strong>Flutter</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>SQL Server</strong>,<strong>Firebase</strong>,<strong> Bash (Linux)</strong> ,<strong>React</strong> and <strong>Microsoft technologies</strong>.
+                           Through academic and personal projects, I’ve gained hands-on experience solving real-world challenges enhancing both my problem-solving skills and development workflow.
+                        </p>
+                        </div>
+                        
+                        <section class="tab-section" id="Education">
+                        <div class="tab-links">
+                            <p class="tab-link active-link" data-tab="education">
+                                <i class='bx bx-book'></i> Education
+                                </p>
+                                <p class="tab-link" data-tab="certifications">
+                                <i class='bx bxs-certification'></i> Certifications
+                                </p>
+                        </div>
+                            <!-- Education CODE -->
+                        <div class="tab-contents active-tab" id="education">
+                            <div class="timeline">
+                            <div class="timeline-item">
+                                <i class='bx bxs-graduation'></i>
+                                <div class="timeline-content">
+                                <h3>Diploma of IT - Software Development</h3>
+                                <span>Central University of Technology | 2023-2025</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-contents" id="certifications">
+                            <div class="timeline">
+                            <div class="timeline-item">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="timeline-content">
+                                <h3>CCNA Certified</h3>
+                                <span>Cisco | 2023</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="timeline-content">
+                                <h3>Cybersecurity Essential</h3>
+                                <span>Cisco | 2022</span>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                            <div class="timeline-item">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="timeline-content">
+                              <h3>IT Essential</h3>
+                                <span>Cisco | 2022</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </section>
+
+    
+                        </section>
+                        <!--SKILLS PAGE CODE-->
+            <section class="skill-page" id="Skills">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <div class="skills-row">
+                    <div class="skills-column">
+                        <h3 class="title">Coding Skills</h3>
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <div class="progress">
+                                    <h3>C# <span>75%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3>JavaScript <span data-width>60%</span></h3>
+                                    <div class="bar"><span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3> Dart <span data-width>70%</span></h3>
+                                    <div class="bar"><span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div class="bar"><span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3>CSS <span>80%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- added another code her -->
+                     <div class="skills-column">
+                        <h3 class="title">FrameWorks</h3>
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <div class="progress">
+                                    <h3>.NET & ASP.NET MVC <span>75%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3>React & Next.js <span>50%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3> Flutter <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3>Bootstrap <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h3>Tailwind CSS <span>40%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                </div>
+
+
+             </section>
+              <!-- PROJECT SECTION CODE -->
+             <section class="projects" id="Projects">
+                <div class="main-text">
+                <h2 class="heading">Latest <span>Projects</span></h2>
+                <div class="project-content">
+                    <div class="row-content">
+                        <img src="files/TravelP.png">
+                        <div class="layer">
+                            <h5>TravelPlanner</h5>
+                            <p>A dynamic travel planning web application built with ASP.NET Core MVC that allows users to explore Venda destinations, view detailed information, and search or filter by interests. The platform includes a clean UI, featured destinations, and responsive design to enhance user engagement.<br>
+
+                                <strong>Tech Stack: ASP.NET Core MVC,C#, HTML, CSS, JavaScript, SQL Server</strong></p>
+                            <div class="btn-box">
+                                        <a href="https://github.com/Shudufhadzo-18/TravelPlanner-01" target="_blank"><i class='bx bx-link-external'></i>github</a>
+                                    </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="row-content">
+                        <img src="files/hotelAPI.png">
+                        <div class="layer">
+                            <h5>HotelBookingAPI</h5>
+                            <p>A RESTful Web API developed using ASP.NET Core that manages hotel listings, rooms, and customer bookings. It supports CRUD operations, availability checks, and booking confirmations. Designed with clean architecture for scalability and easy integration with frontend applications.<br>
+
+                              <strong>Tech Stack: ASP.NET Core Web API, Entity Framework Core,C#, SQL Server</strong></p>
+
+                              <div class="btn-box">
+                                        <a href="https://github.com/Shudufhadzo-18/HotelBooKingAPI" target="_blank"><i class='bx bx-link-external'></i>github</a>
+                                    </div>
+                          
+                        </div>
+                    </div>
+                    <div class="row-content">
+                        <img src="files/chatbot.png">
+                        <div class="layer">
+                            <h5>CHATBOT AI</h5>
+                            <p>An interactive chatbot assistant designed to guide visitors through my portfolio. It responds to questions about my background, skills, and projects, providing a conversational and engaging user experience.<br>
+
+                               <strong>Tech Stack: HTML, CSS, JavaScript (Chatbot logic), OpenAI-style dialogue flow</strong></p>
+
+                               <div class="btn-box">
+                                        <a href="https://github.com/Shudufhadzo-18/MyChatBot-1" target="_blank"><i class='bx bx-link-external'></i>github</a>
+                                    </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row-content">
+                        <img src="files/student.png">
+                        <div class="layer">
+                            <h5>Sudent Management System</h5>
+                            <p>A full-stack web application for managing student profiles, academic analytics, and course registrations. It integrates e-commerce functionality for course payments and includes authentication for both students and administrators.<br>
+
+                               <strong>Tech Stack: ASP.NET Core MVC, C#, SQL Server, HTML, CSS, JavaScript </strong></p>
+
+                               <div class="btn-box">
+                                        <a href="https://github.com/Shudufhadzo-18/Student-management-system" target="_blank"><i class='bx bx-link-external'></i>github</a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </section>
+             <!-- CONTACT SECTION CODE -->
+             <section class="Contact" id="Contact">
+                        <h2 class="heading">Contact <span>Me</span></h2>
+
+                        <form id="contact-form" action="https://formspree.io/f/mldlkyoz" method="POST">
+                            <div class="input-box">
+                            <div class="input-field">
+                                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                                <span class="focus"></span>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                <span class="focus"></span>
+                            </div>
+                            </div>
+
+                            <div class="input-box">
+                            <div class="input-field">
+                                <input type="number" name="phone" id="phone" placeholder="Mobile Number" required>
+                                <span class="focus"></span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="subject" id="subject" placeholder="Email Subject" required>
+                                <span class="focus"></span>
+                            </div>
+                            </div>
+
+                            <div class="textarea-field">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                            <span class="focus"></span>
+                            </div>
+
+                            <div id="form-message" style="display:none; color: green; margin-bottom: 1rem;">
+                             Message sent successfully!
+                            </div>
+
+                            <div class="btn-box">
+                            <button type="submit" class="btn">Submit</button>
+                            </div>
+                        </form>
+                        </section>
+             <!-- footer section -->
+              <footer class="footer">
+                <div class="footer-text">
+                    <p>Copyright &copy; 2025 by Shudufhadzo | All Right Reserved.</p>
+                </div>
+                <div class="footer-iconTop">
+                    <a href="#"><i class='bxr  bx-arrow-up'  ></i> </a>
+                </div>
+              </footer>
+
+    
+    
+    <script type="module" src="script.js"></script>
+   </body>
+</html>
