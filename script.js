@@ -107,7 +107,7 @@ const sendMessageButton = document.querySelector("#send-message");
 
 const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
-const API_KEY = "AIzaSyAFKnQcqiGTlKStSfybFFVXG-0l6t_23R0";
+const API_KEY = "AIzaSyDjwE2KuAuTiRgxfRf9_OgdCVJ2LIIyr2I";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
