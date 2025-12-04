@@ -107,9 +107,32 @@ const sendMessageButton = document.querySelector("#send-message");
 
 const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
-const API_KEY = "AIzaSyC49ZwpkL0YbOHel0LpJWkd9_Pc68aLJNo";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
+
+// --- Netlify function fetch ---
+async function askBot(question) {
+    try {
+        const response = await fetch("https://backend-apikey.netlify.app/.netlify/functions/server", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: question, about: aboutMe })
+        });
+
+        const text = await response.text();
+        if (!text) return "⚠ No response from server";
+
+        try {
+            const data = JSON.parse(text);
+            return data.message ?? data.error ?? "⚠ Unknown server error";
+        } catch {
+            return "⚠ Server returned invalid JSON:\n" + text;
+        }
+
+    } catch (err) {
+        console.error("Bot request failed:", err);
+        return "⚠ Network/Server error";
+    }
+}
 const userData = {
     message:null
 }
@@ -124,36 +147,21 @@ const createMessageElement = (content,...classes) => {
 //bot response AI
 const generateBotResponse =async (incomingMessageDiv) => {
   const messageElement = incomingMessageDiv.querySelector(".message-text");
-    //request option
-    const requestOption = {
-        method: "POST",
-        headers: {"Content-Type":"application/json"},
-        body:JSON.stringify({
-            contents:[{
-                 parts: [{
-      text: `${aboutMe}\n\nUser question: ${userData.message}`
-    }]
-            }]
-        })
-    }
-    try{
-        //FETCH bot response AI
-    const response = await fetch(API_URL, requestOption);
-    const data =  await response.json();
-    if(!response.ok) throw new Error(data.error.message);
-    //Extract and display bot text
-    const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
-    messageElement.innerText = apiResponseText;
-    }
-    catch(error){
-     console.log(error);
-     messageElement.innerText = error.message;
-     messageElement.style.color = "#ff0000";
+   
+    try {
+    // call Netlify function instead of direct API fetch
+    const apiResponseText = await askBot(userData.message);
 
-    } finally {
-        incomingMessageDiv.classList.remove("thinking");
-        chatBody.scrollTo({top: chatBody.scrollHeight, behavior: "smooth"});
-    }
+    // display the bot response
+    messageElement.innerText = apiResponseText;
+} catch (error) {
+    console.log(error);
+    messageElement.innerText = "⚠ Network error";
+    messageElement.style.color = "#ff0000";
+} finally {
+    incomingMessageDiv.classList.remove("thinking");
+    chatBody.scrollTo({top: chatBody.scrollHeight, behavior: "smooth"});
+}
 }
 //Handle outgoing messages
 const handleOutgoingMessage =(e) => {
