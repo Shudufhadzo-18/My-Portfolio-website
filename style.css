@@ -505,6 +505,9 @@ span{
 .tab-contents.active-tab {
   display: block;
 }
+.timeline{
+  text-align: left;
+}
 
 @keyframes fade {
   from {
