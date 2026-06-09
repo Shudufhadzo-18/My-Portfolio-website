@@ -763,17 +763,16 @@ html {
 
 .project-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-items: center;
-  padding: 0 2rem;
 }
 
 /* Individual card */
 .row-content {
   position: relative;
-  width: 440px;
-  height: 330px; /* same height for all cards */
+  width: 100%;
+  max-width: 440px;
+  height: 330px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
