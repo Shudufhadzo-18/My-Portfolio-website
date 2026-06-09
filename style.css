@@ -997,7 +997,7 @@ html {
 }
 .footer{
     display: flex;
-    height: 5vh;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
