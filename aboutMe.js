@@ -21,17 +21,32 @@ Status: Graduate
 --- CERTIFICATIONS ---
 
 - Microsoft Azure Fundamentals (AZ-900)
+-Microsoft Azure Developer (AZ-204)
 - Cisco Networking (CCNA)
 
 --- SKILLS ---
 
-Languages & Frameworks: C#, JavaScript, HTML, CSS, ASP.NET Core, SQL, Flutter, Dart
+Languages & Frameworks: C#,PHP, JavaScript, HTML, CSS, ASP.NET Core, SQL, Flutter, Dart
 Cloud & DevOps: Microsoft Azure, currently learning Docker and Kubernetes
-Databases: SQL Server
+Databases: MYSQL Server, MYSQL workbench,myphpadmin
 Other: REST APIs, MVC Architecture, Networking fundamentals
 
 --- EXPERIENCE ---
-
+Software Developer Intern
+SITA SOC(Ltd)
+05/2026 – Current
+ Developing and maintaining software applications and web-based solutions as part of a
+collaborative development team.
+ Building backend applications and APIs using technologies such as C#, ASP.NET Core, Java, and
+related development tools, while following software development best practices.
+ Participating in the full Software Development Life Cycle (SDLC), including requirements
+analysis, development, testing, debugging, and deployment support.
+ Writing clean, maintainable, and well-structured code while following coding standards and
+development guidelines.
+ Participating in code reviews, knowledge-sharing sessions, and technical discussions to
+improve development skills and software quality.
+ Continuously learning and applying new technologies.
+ 
 Currently building experience through self-driven projects and freelance/portfolio work.
 Approximately 1–2 years of hands-on development experience through projects and coursework.
 Open to junior and graduate-level software development roles.
@@ -50,6 +65,12 @@ Open to junior and graduate-level software development roles.
 3. Hotel Booking API
    - RESTful API for managing hotel reservations
    - Tech: ASP.NET Core, C#, SQL Server
+
+4. Document Management System
+   -Full-stact system
+   - bridging the gap of using manual paper to digital document 
+   - Tech: ASP.NET Core, C#, SQL Server and React
+   
 
 
 
