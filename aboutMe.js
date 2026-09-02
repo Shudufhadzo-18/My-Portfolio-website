@@ -21,7 +21,7 @@ Status: Graduate
 --- CERTIFICATIONS ---
 
 - Microsoft Azure Fundamentals (AZ-900)
--Microsoft Azure Developer (AZ-204)
+- Microsoft Azure Developer (AZ-204)
 - Cisco Networking (CCNA)
 
 --- SKILLS ---
@@ -37,7 +37,7 @@ SITA SOC(Ltd)
 05/2026 – Current
  Developing and maintaining software applications and web-based solutions as part of a
 collaborative development team.
- Building backend applications and APIs using technologies such as C#, ASP.NET Core, Java, and
+ Building backend applications and APIs using technologies such as C#, PHP, ASP.NET Core, Java, and
 related development tools, while following software development best practices.
  Participating in the full Software Development Life Cycle (SDLC), including requirements
 analysis, development, testing, debugging, and deployment support.
@@ -81,10 +81,11 @@ Long-term: Specialize in backend systems and cloud architecture on Microsoft Azu
 
 --- WORK PREFERENCES ---
 
-- Role types: Backend Developer, Software Developer, Graduate Developer, API Developer
+- Role types:Junior Software Developer, Backend Developer, Software Developer, Graduate Developer, API Developer
 - Work style: Open to remote, hybrid, or on-site
 - Team preference: Enjoys both collaborative team environments and independent work
 - Salary expectations: Open to discussion — focused on finding the right opportunity to grow
+-Willng to relocate
 
 --- SAMPLE Q&A ---
 
